@@ -104,8 +104,7 @@ public class TestAdmin
 		String className = "TestClass-Invalid";
 		int classYear = 2017;
 		_admin.createClass(className, classYear, null, 100);
-		//TODO: determine expected behavior with null instructor
-		assertFalse(_admin.classExists(className, classYear));
+		assertTrue(_admin.classExists(className, classYear));
 	}
 	
 	@Test
