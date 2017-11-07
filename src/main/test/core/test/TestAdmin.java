@@ -81,15 +81,6 @@ public class TestAdmin
 	}
 	
 	@Test
-	public void makeClassNullName()
-	{
-		String className = null;
-		int classYear = 2017;
-		_admin.createClass(className, classYear, "Instructor", 100);
-		assertFalse(_admin.classExists(className, classYear));
-	}
-	
-	@Test
 	public void makeClassEmptyName()
 	{
 		String className = "";
